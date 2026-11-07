@@ -1,0 +1,22 @@
+info:
+  name: Actualizar Ciclo
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/ciclos/3"
+  body:
+    type: json
+    data: |
+      {
+        "activo": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

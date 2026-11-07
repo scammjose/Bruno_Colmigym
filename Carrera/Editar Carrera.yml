@@ -1,0 +1,23 @@
+info:
+  name: Editar Carrera
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/carreras/15"
+  body:
+    type: json
+    data: |-
+      {
+        "nombre":"DISEÑO INDUSTRIAL",
+        "abreviatura":"DISIN"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,18 @@
+info:
+  name: Obtener Ciclo Activo
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: "{{baseUrl}}/ciclos/activo"
+  auth:
+    type: bearer
+    token: "{{token_api}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

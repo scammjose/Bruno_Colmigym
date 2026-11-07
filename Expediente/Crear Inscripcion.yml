@@ -1,0 +1,23 @@
+info:
+  name: Crear Inscripcion
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseUrl}}/inscripcion/"
+  body:
+    type: json
+    data: |-
+      {
+        "alumnoId": 5,
+        "cuatrimestreId": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

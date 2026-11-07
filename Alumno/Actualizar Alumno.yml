@@ -1,0 +1,44 @@
+info:
+  name: Actualizar Alumno
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/alumnos/6"
+  body:
+    type: multipart-form
+    data:
+      - name: matricula
+        type: text
+        value: "13270307123"
+        disabled: true
+      - name: nombre
+        type: text
+        value: MANUEL RODRIGUEZ LIRA
+        disabled: true
+      - name: genero
+        type: text
+        value: H
+        disabled: true
+      - name: correo
+        type: text
+        value: manuel_rodriguez@uptecamac.edu.mx
+        disabled: true
+      - name: foto
+        type: file
+        value:
+          - C:\Users\Marcos\Pictures\MANUEL_01.jpg
+        contentType: image/jpeg
+      - name: carreraId
+        type: text
+        value: "8"
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

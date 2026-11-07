@@ -1,0 +1,26 @@
+info:
+  name: Crear Cuatrimestre
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/cuatrimestres/"
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Enero-Diciembre",
+        "fechaInicio": "2027-01-07T06:00:00.000Z",
+        "fechaFin": "2027-04-30T06:00:00.000Z",
+        "activo": false,
+        "cicloId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

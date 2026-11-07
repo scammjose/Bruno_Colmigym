@@ -1,0 +1,23 @@
+info:
+  name: Actualizar Configuracion
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/configuraciones/SCROLL"
+  body:
+    type: json
+    data: |-
+      {
+        "clave":"SCROLL",
+        "valor":"12"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

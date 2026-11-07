@@ -1,0 +1,25 @@
+info:
+  name: Crear Ciclo
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/ciclos/"
+  body:
+    type: json
+    data: |
+      {
+        "nombre": "Ciclo 2027-2028",
+        "fechaInicio": "2027-09-01T00:00:00.000Z",
+        "fechaFin": "2028-08-31T00:00:00.000Z",
+        "activo": false
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
