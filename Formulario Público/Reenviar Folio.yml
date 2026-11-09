@@ -1,18 +1,17 @@
 info:
-  name: Actualizar Inscripcion
+  name: Reenviar Folio
   type: http
-  seq: 4
+  seq: 3
 
 http:
-  method: PATCH
-  url: "{{baseUrl}}/inscripcion/6/estatus"
+  method: POST
+  url: "{{baseUrl}}/publico/reenviar-folio"
   body:
     type: json
     data: |-
       {
-        "estatusGimnasio": "HABILITADO"
+        "matricula":"16166411616"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true

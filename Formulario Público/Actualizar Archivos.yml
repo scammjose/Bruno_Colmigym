@@ -1,0 +1,23 @@
+info:
+  name: Actualizar Archivos
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/publico/actualizar-archivo/COLMI-BE849963/certMedico"
+  body:
+    type: multipart-form
+    data:
+      - name: certMedico
+        type: file
+        value:
+          - C:\Users\Marcos\Downloads\CERTIFICADO_MEDICO3.pdf
+        contentType: application/pdf
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

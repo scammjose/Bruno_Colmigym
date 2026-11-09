@@ -1,0 +1,22 @@
+info:
+  name: Crear Credencial
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/credenciales/"
+  body:
+    type: json
+    data: |-
+      {
+        "alumnoId":5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

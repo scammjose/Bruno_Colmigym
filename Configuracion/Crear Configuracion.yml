@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-        "clave":"SCROLL",
-        "valor":"12-2"
+        "clave":"REGISTRO_PUBLICO",
+        "valor":"false"
       }
   auth: inherit
 

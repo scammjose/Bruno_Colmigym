@@ -1,0 +1,22 @@
+info:
+  name: Actualizar Inscripcion
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/inscripcion/6/estatus"
+  body:
+    type: json
+    data: |-
+      {
+        "estatusGimnasio":"HABILITADO"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,22 @@
+info:
+  name: Actualizar Expediente
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/expediente/6/"
+  body:
+    type: json
+    data: |-
+      {
+        "estatus": "APROBADO"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

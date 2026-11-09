@@ -5,13 +5,12 @@ info:
 
 http:
   method: PUT
-  url: "{{baseUrl}}/configuraciones/SCROLL"
+  url: "{{baseUrl}}/configuraciones/REGISTRO_PUBLICO"
   body:
     type: json
     data: |-
       {
-        "clave":"SCROLL",
-        "valor":"12"
+        "valor":"true"
       }
   auth: inherit
 

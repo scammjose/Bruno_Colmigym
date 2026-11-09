@@ -1,0 +1,53 @@
+info:
+  name: Registro de Alumno
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/publico/registro"
+  body:
+    type: multipart-form
+    data:
+      - name: matricula
+        type: text
+        value: "16166411616"
+      - name: nombre
+        type: text
+        value: JOSE MARCOS HERNANDEZ GARCIA
+      - name: genero
+        type: text
+        value: H
+      - name: correo
+        type: text
+        value: marcos_16166411616@uptecamac.edu.mx
+      - name: carreraId
+        type: text
+        value: "8"
+      - name: foto
+        type: file
+        value:
+          - C:\Users\Marcos\Pictures\1616641.jpg
+        contentType: image/jpeg
+      - name: certMedico
+        type: file
+        value:
+          - C:\Users\Marcos\Downloads\CERTIFICADO_MEDICO.pdf
+        contentType: application/pdf
+      - name: credencial
+        type: file
+        value:
+          - C:\Users\Marcos\Downloads\CREDENCIALES_ALUMNO.pdf
+        contentType: application/pdf
+      - name: responsiva
+        type: file
+        value:
+          - C:\Users\Marcos\Downloads\CARTA_RESPONSIVA.pdf
+        contentType: application/pdf
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
