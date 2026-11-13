@@ -2,7 +2,6 @@ name: COLMI_GYM
 variables:
   - name: baseUrl
     value: http://localhost:3000/api
-    description: ""
   - secret: true
     name: token_api
     description: ""
