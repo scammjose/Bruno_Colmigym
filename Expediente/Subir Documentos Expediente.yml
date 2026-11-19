@@ -1,0 +1,34 @@
+info:
+  name: Subir Documentos Expediente
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseUrl}}/expediente/14/documentos"
+  body:
+    type: multipart-form
+    data:
+      - name: certMedico
+        type: file
+        value:
+          - C:\Users\Marcos\Downloads\CERTIFICADO_MEDICO3.pdf
+        contentType: application/pdf
+      - name: credencial
+        type: file
+        value:
+          - C:\Users\Marcos\Downloads\CREDENCIALES_ALUMNO.pdf
+        contentType: application/pdf
+      - name: responsiva
+        type: file
+        value:
+          - C:\Users\Marcos\Downloads\CARTA_RESPONSIVA.pdf
+        contentType: application/pdf
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

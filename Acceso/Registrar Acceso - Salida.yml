@@ -1,16 +1,16 @@
 info:
-  name: Registrar Entrada
+  name: Registrar Acceso - Salida
   type: http
   seq: 2
 
 http:
   method: POST
-  url: "{{baseUrl}}/acceso/entrada"
+  url: "{{baseUrl}}/acceso/escanear"
   body:
     type: json
     data: |-
       {
-        "codigo":"794249393695"
+        "codigo":"928517615024"
       }
   auth: inherit
 

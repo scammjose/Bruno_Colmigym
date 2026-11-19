@@ -5,7 +5,11 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/inscripcion/"
+  url: "{{baseUrl}}/inscripcion?excluirHistoricos=false"
+  params:
+    - name: excluirHistoricos
+      value: "false"
+      type: query
   auth: inherit
 
 settings:

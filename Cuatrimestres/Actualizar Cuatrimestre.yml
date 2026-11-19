@@ -5,12 +5,12 @@ info:
 
 http:
   method: PUT
-  url: "{{baseUrl}}/cuatrimestres/5"
+  url: "{{baseUrl}}/cuatrimestres/1"
   body:
     type: json
     data: |-
       {
-        "nombre": "Enero-Diciembre2"
+        "activo": true
       }
   auth: inherit
 

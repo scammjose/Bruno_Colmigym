@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/publico/seguimiento/COLMI-BD3324BC"
+  url: "{{baseUrl}}/publico/seguimiento/FOLIO-13260306000-938659"
 
 settings:
   encodeUrl: true
